@@ -120,7 +120,7 @@ export function HeroSection() {
           className="rounded-md border border-border bg-card shadow-2xl shadow-black/60 overflow-hidden"
         >
           {/* Title bar */}
-          <div className="flex items-center gap-2 px-4 py-2.5 bg-[oklch(0.17_0.01_255)] border-b border-border">
+          <div className="flex items-center gap-2 px-4 py-2.5 bg-[var(--terminal-header)] border-b border-border">
             <span className="h-3 w-3 rounded-full bg-[#ff5f56]" />
             <span className="h-3 w-3 rounded-full bg-[#ffbd2e]" />
             <span className="h-3 w-3 rounded-full bg-[#27c93f]" />

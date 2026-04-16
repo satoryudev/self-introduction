@@ -54,74 +54,76 @@
   --color-terminal-border: oklch(0.22 0.02 145);
 }
 
-/* Light mode */
+/* Light mode — 昼間の景色 */
 :root {
-  --background: oklch(0.97 0 0);
+  --background: oklch(0.87 0.06 225);   /* 空の青 */
   --foreground: oklch(0.13 0 0);
-  --card: oklch(1 0 0);
+  --card: oklch(0.99 0.005 100);         /* 白に近いクリーム */
   --card-foreground: oklch(0.13 0 0);
-  --popover: oklch(1 0 0);
+  --popover: oklch(0.99 0.005 100);
   --popover-foreground: oklch(0.13 0 0);
-  --primary: oklch(0.42 0.18 145);
+  --primary: oklch(0.38 0.17 145);       /* 深みのある緑 */
   --primary-foreground: oklch(0.98 0 0);
-  --secondary: oklch(0.92 0.01 145);
+  --secondary: oklch(0.92 0.03 220);
   --secondary-foreground: oklch(0.13 0 0);
-  --muted: oklch(0.93 0 0);
-  --muted-foreground: oklch(0.48 0 0);
-  --accent: oklch(0.92 0.01 145);
-  --accent-foreground: oklch(0.42 0.18 145);
+  --muted: oklch(0.93 0.02 220);
+  --muted-foreground: oklch(0.42 0.02 220);
+  --accent: oklch(0.92 0.03 220);
+  --accent-foreground: oklch(0.38 0.17 145);
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.85 0.01 145);
-  --input: oklch(0.90 0 0);
-  --ring: oklch(0.42 0.18 145 / 40%);
-  --chart-1: oklch(0.42 0.18 145);
-  --chart-2: oklch(0.55 0.20 145);
-  --chart-3: oklch(0.65 0.18 145);
-  --chart-4: oklch(0.75 0.15 145);
-  --chart-5: oklch(0.85 0.10 145);
+  --border: oklch(0.78 0.04 220 / 60%);
+  --input: oklch(0.93 0.02 220);
+  --ring: oklch(0.38 0.17 145 / 40%);
+  --terminal-header: oklch(0.92 0.04 225);
+  --chart-1: oklch(0.38 0.17 145);
+  --chart-2: oklch(0.52 0.18 145);
+  --chart-3: oklch(0.65 0.16 145);
+  --chart-4: oklch(0.75 0.12 145);
+  --chart-5: oklch(0.85 0.08 145);
   --radius: 0.375rem;
-  --sidebar: oklch(1 0 0);
+  --sidebar: oklch(0.99 0.005 100);
   --sidebar-foreground: oklch(0.13 0 0);
-  --sidebar-primary: oklch(0.42 0.18 145);
+  --sidebar-primary: oklch(0.38 0.17 145);
   --sidebar-primary-foreground: oklch(0.98 0 0);
-  --sidebar-accent: oklch(0.92 0.01 145);
+  --sidebar-accent: oklch(0.92 0.03 220);
   --sidebar-accent-foreground: oklch(0.13 0 0);
-  --sidebar-border: oklch(0.85 0.01 145);
-  --sidebar-ring: oklch(0.42 0.18 145 / 40%);
+  --sidebar-border: oklch(0.78 0.04 220 / 60%);
+  --sidebar-ring: oklch(0.38 0.17 145 / 40%);
 }
 
-/* Dark mode */
+/* Dark mode — 夜景 */
 .dark {
-  --background: oklch(0.09 0.01 255);
+  --background: oklch(0.07 0.07 270);   /* 深夜の空 */
   --foreground: oklch(0.95 0 0);
-  --card: oklch(0.13 0.01 255);
+  --card: oklch(0.15 0.06 262);          /* ビルの窓明かり — 背景より明確に明るい */
   --card-foreground: oklch(0.95 0 0);
-  --popover: oklch(0.13 0.01 255);
+  --popover: oklch(0.15 0.06 262);
   --popover-foreground: oklch(0.95 0 0);
-  --primary: oklch(0.87 0.29 145);
-  --primary-foreground: oklch(0.09 0.01 255);
-  --secondary: oklch(0.18 0.01 255);
+  --primary: oklch(0.87 0.29 145);       /* マトリックスグリーン */
+  --primary-foreground: oklch(0.07 0.07 270);
+  --secondary: oklch(0.20 0.05 262);
   --secondary-foreground: oklch(0.95 0 0);
-  --muted: oklch(0.18 0.01 255);
-  --muted-foreground: oklch(0.55 0 0);
-  --accent: oklch(0.18 0.01 255);
+  --muted: oklch(0.20 0.05 262);
+  --muted-foreground: oklch(0.58 0.03 260);
+  --accent: oklch(0.20 0.05 262);
   --accent-foreground: oklch(0.87 0.29 145);
   --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(0.22 0.02 145 / 40%);
-  --input: oklch(0.22 0.01 255);
+  --border: oklch(0.28 0.06 262 / 50%);
+  --input: oklch(0.20 0.05 262);
   --ring: oklch(0.87 0.29 145 / 50%);
+  --terminal-header: oklch(0.19 0.06 262);
   --chart-1: oklch(0.87 0.29 145);
   --chart-2: oklch(0.65 0.22 145);
   --chart-3: oklch(0.45 0.15 145);
   --chart-4: oklch(0.35 0.10 145);
   --chart-5: oklch(0.25 0.05 145);
-  --sidebar: oklch(0.13 0.01 255);
+  --sidebar: oklch(0.15 0.06 262);
   --sidebar-foreground: oklch(0.95 0 0);
   --sidebar-primary: oklch(0.87 0.29 145);
-  --sidebar-primary-foreground: oklch(0.09 0.01 255);
-  --sidebar-accent: oklch(0.18 0.01 255);
+  --sidebar-primary-foreground: oklch(0.07 0.07 270);
+  --sidebar-accent: oklch(0.20 0.05 262);
   --sidebar-accent-foreground: oklch(0.95 0 0);
-  --sidebar-border: oklch(0.22 0.02 145 / 40%);
+  --sidebar-border: oklch(0.28 0.06 262 / 50%);
   --sidebar-ring: oklch(0.87 0.29 145 / 50%);
 }
 
@@ -137,19 +139,56 @@
   }
 }
 
+/* ── 背景グラデーション ─────────────────── */
+
+/* 夜景: 夜空から地平線の街の光へ */
+html.dark body {
+  background:
+    radial-gradient(ellipse 120% 35% at 50% 100%,
+      oklch(0.22 0.08 50 / 18%) 0%,
+      transparent 65%),
+    radial-gradient(ellipse 80% 30% at 20% 95%,
+      oklch(0.25 0.10 30 / 12%) 0%,
+      transparent 60%),
+    radial-gradient(ellipse 60% 25% at 80% 98%,
+      oklch(0.22 0.08 280 / 10%) 0%,
+      transparent 55%),
+    linear-gradient(180deg,
+      oklch(0.06 0.07 275) 0%,
+      oklch(0.08 0.07 268) 50%,
+      oklch(0.10 0.07 258) 100%);
+}
+
+/* 昼間: 空から草原へ */
+html:not(.dark) body {
+  background:
+    linear-gradient(180deg,
+      oklch(0.82 0.07 230) 0%,
+      oklch(0.88 0.06 220) 40%,
+      oklch(0.88 0.05 160) 75%,
+      oklch(0.84 0.07 145) 100%);
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: oklch(0.09 0.01 255);
+  background: transparent;
 }
-::-webkit-scrollbar-thumb {
-  background: oklch(0.87 0.29 145 / 40%);
+html.dark ::-webkit-scrollbar-thumb {
+  background: oklch(0.87 0.29 145 / 30%);
   border-radius: 3px;
 }
-::-webkit-scrollbar-thumb:hover {
-  background: oklch(0.87 0.29 145 / 70%);
+html.dark ::-webkit-scrollbar-thumb:hover {
+  background: oklch(0.87 0.29 145 / 60%);
+}
+html:not(.dark) ::-webkit-scrollbar-thumb {
+  background: oklch(0.38 0.17 145 / 30%);
+  border-radius: 3px;
+}
+html:not(.dark) ::-webkit-scrollbar-thumb:hover {
+  background: oklch(0.38 0.17 145 / 60%);
 }
 
 /* Terminal cursor blink */
