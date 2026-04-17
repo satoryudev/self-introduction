@@ -88,7 +88,7 @@ export function HeroSection() {
   const { displayedLines, activeLine } = useTypewriter(LINES);
 
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center px-4 py-20 overflow-hidden">
+    <section className="relative min-h-screen flex flex-col items-center justify-center px-4 pt-24 pb-20 overflow-hidden">
       {/* Background grid */}
       <div
         className="absolute inset-0 opacity-[0.04]"
@@ -108,7 +108,7 @@ export function HeroSection() {
           className="flex justify-center mb-8"
         >
           <span className="text-xs text-primary border border-primary/40 rounded px-3 py-1 bg-primary/5">
-            ターミナルセッション開始 — 2025-04-16
+            ターミナルセッション開始 — 2026-04-17
           </span>
         </motion.div>
 
