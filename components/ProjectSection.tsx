@@ -49,8 +49,10 @@ function ProjectCard({ project, index }: ProjectCardProps) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ delay: index * 0.1, duration: 0.45 }}
-      className="group rounded-md border border-border bg-card p-4 hover:border-primary/50 hover:bg-card/80 transition-colors"
+      className="group relative rounded-md border border-border bg-card p-4 hover:border-primary/40 hover:bg-card/80 transition-all duration-200 hover:shadow-md hover:shadow-primary/5 overflow-hidden"
     >
+      {/* 左ボーダーアクセント */}
+      <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-primary/0 group-hover:bg-primary/40 transition-all duration-200" />
       <div className="flex items-start justify-between mb-2">
         <div className="flex items-center gap-2">
           <span className="text-primary text-xs">./</span>

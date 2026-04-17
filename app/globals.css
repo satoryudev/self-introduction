@@ -136,37 +136,47 @@
   }
   html {
     @apply font-mono;
+    scroll-behavior: smooth;
   }
 }
 
-/* ── 背景グラデーション ─────────────────── */
+/* ── 背景グラデーション ─────────────────────────────────
+   body を透過させて html 要素にグラデーションをかけることで
+   ページ全体（スクロール全域）を一つの背景で覆う
+   ─────────────────────────────────────────────────── */
 
-/* 夜景: 夜空から地平線の街の光へ */
-html.dark body {
-  background:
-    radial-gradient(ellipse 120% 35% at 50% 100%,
-      oklch(0.22 0.08 50 / 18%) 0%,
-      transparent 65%),
-    radial-gradient(ellipse 80% 30% at 20% 95%,
-      oklch(0.25 0.10 30 / 12%) 0%,
-      transparent 60%),
-    radial-gradient(ellipse 60% 25% at 80% 98%,
-      oklch(0.22 0.08 280 / 10%) 0%,
-      transparent 55%),
-    linear-gradient(180deg,
-      oklch(0.06 0.07 275) 0%,
-      oklch(0.08 0.07 268) 50%,
-      oklch(0.10 0.07 258) 100%);
+/* body は透過 — html のグラデーションを透かす */
+body {
+  background: transparent;
 }
 
-/* 昼間: 空から草原へ */
-html:not(.dark) body {
+/* 夜景: 夜空 → 地平線の街の光 （html に適用 = ページ全体） */
+html.dark {
+  background:
+    radial-gradient(ellipse 120% 30% at 50% 100%,
+      oklch(0.22 0.08 50 / 16%) 0%,
+      transparent 60%),
+    radial-gradient(ellipse 80% 25% at 20% 100%,
+      oklch(0.25 0.10 30 / 10%) 0%,
+      transparent 55%),
+    radial-gradient(ellipse 60% 20% at 80% 100%,
+      oklch(0.22 0.08 280 / 8%) 0%,
+      transparent 50%),
+    linear-gradient(180deg,
+      oklch(0.05 0.07 278) 0%,
+      oklch(0.07 0.07 272) 40%,
+      oklch(0.09 0.07 263) 100%);
+}
+
+/* 昼間: 空 → 草原 （html に適用 = ページ全体） */
+html:not(.dark) {
   background:
     linear-gradient(180deg,
-      oklch(0.82 0.07 230) 0%,
-      oklch(0.88 0.06 220) 40%,
-      oklch(0.88 0.05 160) 75%,
-      oklch(0.84 0.07 145) 100%);
+      oklch(0.78 0.09 235) 0%,
+      oklch(0.84 0.07 225) 20%,
+      oklch(0.88 0.05 210) 45%,
+      oklch(0.87 0.05 168) 70%,
+      oklch(0.83 0.08 148) 100%);
 }
 
 /* Custom scrollbar */
@@ -189,6 +199,23 @@ html:not(.dark) ::-webkit-scrollbar-thumb {
 }
 html:not(.dark) ::-webkit-scrollbar-thumb:hover {
   background: oklch(0.38 0.17 145 / 60%);
+}
+
+/* ── 星・流れ星アニメーション ──────────────── */
+
+/* 星のまたたき */
+@keyframes star-twinkle {
+  from { opacity: 1; transform: scale(1); }
+  to   { opacity: 0.06; transform: scale(0.5); }
+}
+
+/* 流れ星: 12秒周期で一瞬だけ走る */
+/* 左下25°方向へ移動 — 筋の rotate(-25deg) と対応 */
+@keyframes shooting-star {
+  0%   { transform: translate(0, 0);           opacity: 0; }
+  2%   { transform: translate(0, 0);           opacity: 1; }
+  18%  { transform: translate(-290px, 135px);  opacity: 0; }
+  100% { transform: translate(-290px, 135px);  opacity: 0; }
 }
 
 /* Terminal cursor blink */
