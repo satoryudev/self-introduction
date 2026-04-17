@@ -53,7 +53,7 @@ export default function HomePage() {
       <footer className="w-full max-w-3xl px-4 py-10 mt-4">
         <div className="border-t border-border pt-6 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-muted-foreground">
           <span>
-            <span className="text-primary">©</span> 2026 佐藤 琉惺 / Ryusei Sato
+            <span className="text-primary">©</span> 2026 satoryudev
           </span>
           <span className="font-mono">Built with Next.js · Deployed on Vercel</span>
         </div>

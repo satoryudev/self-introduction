@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 const LINES = [
-  { prompt: "$ whoami", output: "佐藤 琉惺 / Ryusei Sato", color: "text-primary" },
+  { prompt: "$ whoami", output: "satoryudev", color: "text-primary" },
   { prompt: "$ cat affiliation.txt", output: "千葉工業大学 情報科学科 3年", color: "text-foreground" },
   { prompt: "$ cat motto.txt", output: "競プロ × AI × 麻雀 — コードで世界を攻略する", color: "text-foreground" },
   { prompt: "$ echo $LOVES", output: "C++ | AtCoder | Hackathon | Mahjong AI", color: "text-primary" },
@@ -125,7 +125,7 @@ export function HeroSection() {
             <span className="h-3 w-3 rounded-full bg-[#ffbd2e]" />
             <span className="h-3 w-3 rounded-full bg-[#27c93f]" />
             <span className="ml-3 text-xs text-muted-foreground">
-              ryusei@cit:~
+              satoryudev@cit:~
             </span>
           </div>
 

@@ -59,7 +59,7 @@ export function Navbar() {
           href="#"
           className="text-sm font-mono text-primary hover:opacity-70 transition-opacity shrink-0"
         >
-          <span className="text-muted-foreground">~/</span>ryusei
+          <span className="text-muted-foreground">~/</span>satoryudev
         </a>
 
         {/* ナビリンク */}

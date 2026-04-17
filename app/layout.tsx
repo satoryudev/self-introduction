@@ -11,11 +11,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "佐藤 琉惺 | Ryusei Sato",
+  title: "satoryudev",
   description:
-    "千葉工業大学 CS 3年・佐藤琉惺のポートフォリオ。競技プログラミング・AI・麻雀AIを愛するC++エンジニア。",
+    "千葉工業大学 CS 3年・satoryudevのポートフォリオ。競技プログラミング・AI・麻雀AIを愛するC++エンジニア。",
   openGraph: {
-    title: "佐藤 琉惺 | Ryusei Sato",
+    title: "satoryudev",
     description: "競プロ × AI × 麻雀 — C++ エンジニアの自己紹介",
     type: "website",
   },
