@@ -46,11 +46,8 @@ function useTypewriter(lines: typeof LINES) {
         const t = setTimeout(() => setCurrentChar((c) => c + 1), TYPING_SPEED);
         return () => clearTimeout(t);
       } else {
-        setDisplayedLines((prev) => [
-          ...prev,
-          { ...line, done: true },
-        ]);
         const t = setTimeout(() => {
+          setDisplayedLines((prev) => [...prev, { ...line, done: true }]);
           setCurrentLine((l) => l + 1);
           setCurrentChar(0);
           setPhase("prompt");
