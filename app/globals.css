@@ -54,74 +54,76 @@
   --color-terminal-border: oklch(0.22 0.02 145);
 }
 
-/* Light mode */
+/* Light mode — 昼間の景色 */
 :root {
-  --background: oklch(0.97 0 0);
+  --background: oklch(0.87 0.06 225);   /* 空の青 */
   --foreground: oklch(0.13 0 0);
-  --card: oklch(1 0 0);
+  --card: oklch(0.99 0.005 100);         /* 白に近いクリーム */
   --card-foreground: oklch(0.13 0 0);
-  --popover: oklch(1 0 0);
+  --popover: oklch(0.99 0.005 100);
   --popover-foreground: oklch(0.13 0 0);
-  --primary: oklch(0.42 0.18 145);
+  --primary: oklch(0.38 0.17 145);       /* 深みのある緑 */
   --primary-foreground: oklch(0.98 0 0);
-  --secondary: oklch(0.92 0.01 145);
+  --secondary: oklch(0.92 0.03 220);
   --secondary-foreground: oklch(0.13 0 0);
-  --muted: oklch(0.93 0 0);
-  --muted-foreground: oklch(0.48 0 0);
-  --accent: oklch(0.92 0.01 145);
-  --accent-foreground: oklch(0.42 0.18 145);
+  --muted: oklch(0.93 0.02 220);
+  --muted-foreground: oklch(0.42 0.02 220);
+  --accent: oklch(0.92 0.03 220);
+  --accent-foreground: oklch(0.38 0.17 145);
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.85 0.01 145);
-  --input: oklch(0.90 0 0);
-  --ring: oklch(0.42 0.18 145 / 40%);
-  --chart-1: oklch(0.42 0.18 145);
-  --chart-2: oklch(0.55 0.20 145);
-  --chart-3: oklch(0.65 0.18 145);
-  --chart-4: oklch(0.75 0.15 145);
-  --chart-5: oklch(0.85 0.10 145);
+  --border: oklch(0.78 0.04 220 / 60%);
+  --input: oklch(0.93 0.02 220);
+  --ring: oklch(0.38 0.17 145 / 40%);
+  --terminal-header: oklch(0.92 0.04 225);
+  --chart-1: oklch(0.38 0.17 145);
+  --chart-2: oklch(0.52 0.18 145);
+  --chart-3: oklch(0.65 0.16 145);
+  --chart-4: oklch(0.75 0.12 145);
+  --chart-5: oklch(0.85 0.08 145);
   --radius: 0.375rem;
-  --sidebar: oklch(1 0 0);
+  --sidebar: oklch(0.99 0.005 100);
   --sidebar-foreground: oklch(0.13 0 0);
-  --sidebar-primary: oklch(0.42 0.18 145);
+  --sidebar-primary: oklch(0.38 0.17 145);
   --sidebar-primary-foreground: oklch(0.98 0 0);
-  --sidebar-accent: oklch(0.92 0.01 145);
+  --sidebar-accent: oklch(0.92 0.03 220);
   --sidebar-accent-foreground: oklch(0.13 0 0);
-  --sidebar-border: oklch(0.85 0.01 145);
-  --sidebar-ring: oklch(0.42 0.18 145 / 40%);
+  --sidebar-border: oklch(0.78 0.04 220 / 60%);
+  --sidebar-ring: oklch(0.38 0.17 145 / 40%);
 }
 
-/* Dark mode */
+/* Dark mode — 夜景 */
 .dark {
-  --background: oklch(0.09 0.01 255);
+  --background: oklch(0.07 0.07 270);   /* 深夜の空 */
   --foreground: oklch(0.95 0 0);
-  --card: oklch(0.13 0.01 255);
+  --card: oklch(0.15 0.06 262);          /* ビルの窓明かり — 背景より明確に明るい */
   --card-foreground: oklch(0.95 0 0);
-  --popover: oklch(0.13 0.01 255);
+  --popover: oklch(0.15 0.06 262);
   --popover-foreground: oklch(0.95 0 0);
-  --primary: oklch(0.87 0.29 145);
-  --primary-foreground: oklch(0.09 0.01 255);
-  --secondary: oklch(0.18 0.01 255);
+  --primary: oklch(0.87 0.29 145);       /* マトリックスグリーン */
+  --primary-foreground: oklch(0.07 0.07 270);
+  --secondary: oklch(0.20 0.05 262);
   --secondary-foreground: oklch(0.95 0 0);
-  --muted: oklch(0.18 0.01 255);
-  --muted-foreground: oklch(0.55 0 0);
-  --accent: oklch(0.18 0.01 255);
+  --muted: oklch(0.20 0.05 262);
+  --muted-foreground: oklch(0.58 0.03 260);
+  --accent: oklch(0.20 0.05 262);
   --accent-foreground: oklch(0.87 0.29 145);
   --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(0.22 0.02 145 / 40%);
-  --input: oklch(0.22 0.01 255);
+  --border: oklch(0.28 0.06 262 / 50%);
+  --input: oklch(0.20 0.05 262);
   --ring: oklch(0.87 0.29 145 / 50%);
+  --terminal-header: oklch(0.19 0.06 262);
   --chart-1: oklch(0.87 0.29 145);
   --chart-2: oklch(0.65 0.22 145);
   --chart-3: oklch(0.45 0.15 145);
   --chart-4: oklch(0.35 0.10 145);
   --chart-5: oklch(0.25 0.05 145);
-  --sidebar: oklch(0.13 0.01 255);
+  --sidebar: oklch(0.15 0.06 262);
   --sidebar-foreground: oklch(0.95 0 0);
   --sidebar-primary: oklch(0.87 0.29 145);
-  --sidebar-primary-foreground: oklch(0.09 0.01 255);
-  --sidebar-accent: oklch(0.18 0.01 255);
+  --sidebar-primary-foreground: oklch(0.07 0.07 270);
+  --sidebar-accent: oklch(0.20 0.05 262);
   --sidebar-accent-foreground: oklch(0.95 0 0);
-  --sidebar-border: oklch(0.22 0.02 145 / 40%);
+  --sidebar-border: oklch(0.28 0.06 262 / 50%);
   --sidebar-ring: oklch(0.87 0.29 145 / 50%);
 }
 
@@ -134,7 +136,47 @@
   }
   html {
     @apply font-mono;
+    scroll-behavior: smooth;
   }
+}
+
+/* ── 背景グラデーション ─────────────────────────────────
+   body を透過させて html 要素にグラデーションをかけることで
+   ページ全体（スクロール全域）を一つの背景で覆う
+   ─────────────────────────────────────────────────── */
+
+/* body は透過 — html のグラデーションを透かす */
+body {
+  background: transparent;
+}
+
+/* 夜景: 夜空 → 地平線の街の光 （html に適用 = ページ全体） */
+html.dark {
+  background:
+    radial-gradient(ellipse 120% 30% at 50% 100%,
+      oklch(0.22 0.08 50 / 16%) 0%,
+      transparent 60%),
+    radial-gradient(ellipse 80% 25% at 20% 100%,
+      oklch(0.25 0.10 30 / 10%) 0%,
+      transparent 55%),
+    radial-gradient(ellipse 60% 20% at 80% 100%,
+      oklch(0.22 0.08 280 / 8%) 0%,
+      transparent 50%),
+    linear-gradient(180deg,
+      oklch(0.05 0.07 278) 0%,
+      oklch(0.07 0.07 272) 40%,
+      oklch(0.09 0.07 263) 100%);
+}
+
+/* 昼間: 空 → 草原 （html に適用 = ページ全体） */
+html:not(.dark) {
+  background:
+    linear-gradient(180deg,
+      oklch(0.78 0.09 235) 0%,
+      oklch(0.84 0.07 225) 20%,
+      oklch(0.88 0.05 210) 45%,
+      oklch(0.87 0.05 168) 70%,
+      oklch(0.83 0.08 148) 100%);
 }
 
 /* Custom scrollbar */
@@ -142,14 +184,38 @@
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: oklch(0.09 0.01 255);
+  background: transparent;
 }
-::-webkit-scrollbar-thumb {
-  background: oklch(0.87 0.29 145 / 40%);
+html.dark ::-webkit-scrollbar-thumb {
+  background: oklch(0.87 0.29 145 / 30%);
   border-radius: 3px;
 }
-::-webkit-scrollbar-thumb:hover {
-  background: oklch(0.87 0.29 145 / 70%);
+html.dark ::-webkit-scrollbar-thumb:hover {
+  background: oklch(0.87 0.29 145 / 60%);
+}
+html:not(.dark) ::-webkit-scrollbar-thumb {
+  background: oklch(0.38 0.17 145 / 30%);
+  border-radius: 3px;
+}
+html:not(.dark) ::-webkit-scrollbar-thumb:hover {
+  background: oklch(0.38 0.17 145 / 60%);
+}
+
+/* ── 星・流れ星アニメーション ──────────────── */
+
+/* 星のまたたき */
+@keyframes star-twinkle {
+  from { opacity: 1; transform: scale(1); }
+  to   { opacity: 0.06; transform: scale(0.5); }
+}
+
+/* 流れ星: 12秒周期で一瞬だけ走る */
+/* 左下25°方向へ移動 — 筋の rotate(-25deg) と対応 */
+@keyframes shooting-star {
+  0%   { transform: translate(0, 0);           opacity: 0; }
+  2%   { transform: translate(0, 0);           opacity: 1; }
+  18%  { transform: translate(-290px, 135px);  opacity: 0; }
+  100% { transform: translate(-290px, 135px);  opacity: 0; }
 }
 
 /* Terminal cursor blink */

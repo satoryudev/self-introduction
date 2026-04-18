@@ -18,7 +18,7 @@ function SectionSkeleton() {
 export default function HomePage() {
   return (
     <main className="flex flex-col items-center">
-      <div className="w-full">
+      <div className="w-full" id="hero">
         <HeroSection />
       </div>
 
@@ -26,22 +26,34 @@ export default function HomePage() {
         <div className="border-t border-border" />
       </div>
 
-      <SkillSection />
-      <ProjectSection />
-      <AISection />
+      <div id="skills" className="w-full scroll-mt-14">
+        <SkillSection />
+      </div>
 
-      <Suspense fallback={<SectionSkeleton />}>
-        <AtCoderSection />
-      </Suspense>
+      <div id="projects" className="w-full scroll-mt-14">
+        <ProjectSection />
+      </div>
 
-      <Suspense fallback={<SectionSkeleton />}>
-        <GitHubSection />
-      </Suspense>
+      <div id="ai" className="w-full scroll-mt-14">
+        <AISection />
+      </div>
+
+      <div id="atcoder" className="w-full scroll-mt-14">
+        <Suspense fallback={<SectionSkeleton />}>
+          <AtCoderSection />
+        </Suspense>
+      </div>
+
+      <div id="github" className="w-full scroll-mt-14">
+        <Suspense fallback={<SectionSkeleton />}>
+          <GitHubSection />
+        </Suspense>
+      </div>
 
       <footer className="w-full max-w-3xl px-4 py-10 mt-4">
         <div className="border-t border-border pt-6 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-muted-foreground">
           <span>
-            <span className="text-primary">©</span> 2025 佐藤 琉惺 / Ryusei Sato
+            <span className="text-primary">©</span> 2026 satoryudev
           </span>
           <span className="font-mono">Built with Next.js · Deployed on Vercel</span>
         </div>
